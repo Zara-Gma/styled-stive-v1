@@ -1,8 +1,33 @@
 import React from "react";
-import { InfoSec } from "./InfoSection.elements";
-import { Container } from "../../globalStyles";
+import { Link } from "react-router-dom";
+import { Container, Button } from "../../globalStyles";
+import {
+  InfoSec,
+  InfoRow,
+  InfoColumn,
+  TextWrapper,
+  TopLine,
+  Heading,
+  Subtitle,
+  ImgWrapper,
+  Img,
+} from "./InfoSection.elements";
 
-const InfoSection = ({ lightBg }) => {
+const InfoSection = ({
+  primary,
+  lightBg,
+  imgStart,
+  lightTopLine,
+  lightTextDesc,
+  buttonLabel,
+  description,
+  headLine,
+  lightText,
+  topLine,
+  img,
+  alt,
+  start,
+}) => {
   return (
     <>
       <InfoSec lightBg={lightBg}>
@@ -19,6 +44,11 @@ const InfoSection = ({ lightBg }) => {
                   </Button>
                 </Link>
               </TextWrapper>
+            </InfoColumn>
+            <InfoColumn>
+              <ImgWrapper start={start}>
+                <Img src={img} alt={alt} />
+              </ImgWrapper>
             </InfoColumn>
           </InfoRow>
         </Container>
