@@ -79,13 +79,23 @@ export const NavItem = styled.li`
     border-bottom: 2px solid #4b59f7;
   }
 
-  @media screen and (max-width: 960 px) {
+  @media screen and (max-width: 960px) {
     width: 100%;
 
     &:hover {
       border: none;
     }
-  } ;
+  }
+`;
+
+export const NavItemBtn = styled.li`
+  @media screen and (max-width: 960px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+  }
 `;
 
 export const NavLinks = styled(Link)`
@@ -106,16 +116,6 @@ export const NavLinks = styled(Link)`
       color: #4b59f7;
       transition: all 0.3s ease;
     }
-  }
-`;
-
-export const NavItemBtn = styled.li`
-  @media screen and (max-width: 960px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 120px;
   }
 `;
 
